@@ -1,8 +1,11 @@
 import React from  'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 
 const Services = () => {
-    return <div> Services</div>;
+    return (
+        <Container className="py=5"
+    )
 };
 
 
