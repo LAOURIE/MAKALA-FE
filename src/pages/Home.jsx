@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import './styles/Home.css';
+import '../styles/Home.css';
 
 const Home = () => {
   return (
-    <Container className="home-container">
-      <Row className="align-items-center">
-        <Col md={6}>
+    <Container fluid className="home-container">
+      <Row className="align-items-center justify-content-center text-center">
+        <Col md={8} lg={6}>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -19,13 +19,15 @@ const Home = () => {
             </p>
           </motion.div>
         </Col>
-        <Col md={6}>
+      </Row>
+      <Row className="justify-content-center">
+        <Col md={8} lg={6}>
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Image src="https://www.pinterest.com/pin/56506170326014404/" fluid className="home-image" />
+            <Image src="/path/to/your/image.jpg" fluid className="home-image" />
           </motion.div>
         </Col>
       </Row>
